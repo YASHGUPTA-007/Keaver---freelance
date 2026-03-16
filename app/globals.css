@@ -1,52 +1,81 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #0B1F3A;
-  --color-secondary: #1E3A5F;
-  --color-accent: #D4AF37;
-  --color-background: #F8FAFC;
-  --color-foreground: #0B1F3A;
+  --color-navy:      #0B1F3A;
+  --color-navy-mid:  #1E3A5F;
+  --color-gold:      #C9A84C;
+  --color-gold-light:#E8C97A;
+  --color-cream:     #FAF8F4;
+  --color-cream-alt: #F2EDE4;
+  --color-border:    #E4DDD2;
+  --color-muted:     #6B7280;
 
-  --color-border: #E2E8F0;
-
-  --font-sans: var(--font-inter);
-  --font-serif: var(--font-playfair);
+  --font-sans:    var(--font-inter);
+  --font-serif:   var(--font-playfair);
+  --font-display: var(--font-syne);
 }
 
 @layer base {
   *, ::after, ::before {
     border-color: var(--color-border);
+    box-sizing: border-box;
   }
-
   body {
-    background-color: var(--color-background);
-    color: var(--color-foreground);
-    font-family: var(--font-sans);
+    background-color: #FAF8F4;
+    color: #0B1F3A;
+    font-family: var(--font-inter);
+    cursor: none;
   }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-serif);
-    color: var(--color-primary);
-  }
+  a, button { cursor: none; }
 }
 
+/* ── Lenis ── */
+html.lenis { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: hidden; }
+.lenis.lenis-scrolling iframe { pointer-events: none; }
 
-html.lenis {
-  height: auto;
+/* ── Custom Cursor ── */
+.cursor-dot {
+  width: 6px; height: 6px;
+  background: #C9A84C;
+  border-radius: 50%;
+  position: fixed; top: 0; left: 0;
+  pointer-events: none; z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+.cursor-ring {
+  width: 32px; height: 32px;
+  border: 1px solid rgba(201, 168, 76, 0.4);
+  border-radius: 50%;
+  position: fixed; top: 0; left: 0;
+  pointer-events: none; z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease, height 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+}
+.cursor-ring.hovering {
+  width: 52px; height: 52px;
+  border-color: #C9A84C;
+  background: rgba(201, 168, 76, 0.06);
+}
+.cursor-ring.clicking {
+  width: 20px; height: 20px;
+  background: rgba(201, 168, 76, 0.15);
 }
 
-.lenis.lenis-smooth {
-  scroll-behavior: auto !important;
+/* ── Marquee ── */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.marquee-track {
+  animation: marquee 32s linear infinite;
+  white-space: nowrap;
 }
 
-.lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
-}
-
-.lenis.lenis-stopped {
-  overflow: hidden;
-}
-
-.lenis.lenis-scrolling iframe {
-  pointer-events: none;
+/* ── Divider line reveal ── */
+.line-reveal {
+  transform-origin: left center;
+  transform: scaleX(0);
 }
