@@ -82,7 +82,7 @@ export default function Footer() {
               Ready to transform a life?
             </p>
             <h2
-              className="font-(family-name:--font-playfair) font-normal text-white leading-[1.1]"
+              className="font-(family-name:--font-inter) font-bold text-white leading-[1.1] tracking-tight"
               style={{ fontSize: "clamp(2rem, 5vw, 4rem)" }}
             >
               Every exceptional mind<br />

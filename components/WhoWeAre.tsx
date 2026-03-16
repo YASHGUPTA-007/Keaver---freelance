@@ -37,7 +37,7 @@ export default function WhoWeAre() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 1, ease: [0.25, 1, 0.5, 1] }}
-          className="font-(family-name:--font-playfair) text-navy text-4xl md:text-6xl lg:text-[72px] leading-[1.1] tracking-tight mb-10 max-w-5xl mx-auto"
+          className="font-(family-name:--font-inter) font-bold text-navy text-4xl md:text-6xl lg:text-[72px] leading-[1.1] tracking-tight mb-10 max-w-5xl mx-auto"
         >
           Our vision is to create a world where{" "}
           <em className="text-gold font-normal italic">exceptional</em> talent
@@ -81,7 +81,7 @@ export default function WhoWeAre() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="font-(family-name:--font-playfair) font-normal text-navy text-3xl md:text-4xl lg:text-5xl leading-[1.2]"
+              className="font-(family-name:--font-inter) font-bold text-navy text-3xl md:text-4xl lg:text-5xl leading-[1.2] tracking-tight"
             >
               Learning has the{" "}
               <em className="text-gold not-italic italic">power</em>{" "}
@@ -133,7 +133,7 @@ export default function WhoWeAre() {
               transition={{ delay: 0.4, duration: 0.7 }}
               className="absolute bottom-5 left-5 bg-white/95 backdrop-blur-sm border border-border p-5 shadow-lg"
             >
-              <p className="font-(family-name:--font-playfair) text-3xl font-semibold text-navy">500+</p>
+              <p className="font-(family-name:--font-inter) text-3xl font-semibold text-navy">500+</p>
               <p className="font-(family-name:--font-syne) text-[10px] tracking-widest uppercase text-navy/50 mt-0.5">Lives Transformed</p>
             </motion.div>
           </motion.div>
@@ -184,7 +184,7 @@ export default function WhoWeAre() {
                     <span className="w-4 h-px bg-gold" />
                     <span className="font-(family-name:--font-syne) text-[9px] tracking-[0.3em] uppercase text-gold/70 font-semibold">{card.tag}</span>
                   </div>
-                  <h3 className="font-(family-name:--font-playfair) text-navy text-2xl lg:text-3xl mb-3">
+                  <h3 className="font-(family-name:--font-inter) font-bold text-navy text-2xl lg:text-3xl mb-3">
                     {card.title}{" "}
                     <em className="italic font-normal text-gold">{card.em}</em>
                   </h3>
@@ -222,7 +222,7 @@ export default function WhoWeAre() {
                 <span className="w-6 h-px bg-gold" />
                 <span className="font-(family-name:--font-syne) text-[10px] tracking-[0.3em] uppercase text-gold font-semibold">Our Vision</span>
               </div>
-              <h3 className="font-(family-name:--font-playfair) font-normal text-navy text-3xl md:text-4xl leading-[1.25]">
+              <h3 className="font-(family-name:--font-inter) font-bold text-navy text-3xl md:text-4xl leading-[1.25]">
                 A world where talent knows no barriers.
               </h3>
               <p className="text-navy/60 text-base leading-[1.9] font-light max-w-lg">

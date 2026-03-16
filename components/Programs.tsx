@@ -85,7 +85,7 @@ export default function Programs() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="font-(family-name:--font-playfair) font-normal text-navy text-3xl md:text-4xl lg:text-5xl leading-tight"
+            className="font-(family-name:--font-inter) font-bold text-navy text-3xl md:text-4xl lg:text-5xl leading-tight tracking-tight"
           >
             From potential{" "}
             <em className="text-gold italic">to</em>{" "}

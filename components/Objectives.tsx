@@ -76,7 +76,7 @@ export default function Objectives() {
               <span className="w-6 h-px bg-gold" />
               <span className="font-(family-name:--font-syne) text-[10px] tracking-[0.3em] uppercase text-gold font-semibold">What We Stand For</span>
             </div>
-            <h2 className="font-(family-name:--font-playfair) font-normal text-navy text-3xl md:text-4xl lg:text-5xl leading-tight">
+            <h2 className="font-(family-name:--font-inter) font-bold text-navy text-3xl md:text-4xl lg:text-5xl leading-tight tracking-tight">
               Our Objectives
             </h2>
           </motion.div>
@@ -125,7 +125,7 @@ export default function Objectives() {
                         <span className="font-(family-name:--font-syne) text-gold text-[9px] tracking-[0.4em] uppercase font-semibold">{obj.num}</span>
                         <div className="w-8 h-px bg-gold/40" />
                       </div>
-                      <h3 className="font-(family-name:--font-playfair) font-normal text-white text-3xl md:text-4xl lg:text-5xl leading-tight mb-4">
+                      <h3 className="font-(family-name:--font-inter) font-bold text-white text-3xl md:text-4xl lg:text-5xl leading-tight mb-4 tracking-tight">
                         {obj.title}
                       </h3>
                       <p className="text-white/55 text-base leading-relaxed font-light max-w-lg">
@@ -169,7 +169,7 @@ export default function Objectives() {
                   <div className="absolute inset-0 flex items-center px-10 md:px-16 gap-6">
                     <span className="font-(family-name:--font-syne) text-gold/40 font-semibold text-xs tracking-widest shrink-0">{obj.num}</span>
                     <div>
-                      <h3 className="font-(family-name:--font-playfair) font-normal text-white text-2xl md:text-3xl mb-2">{obj.title}</h3>
+                      <h3 className="font-(family-name:--font-inter) font-bold text-white text-2xl md:text-3xl mb-2">{obj.title}</h3>
                       <p className="text-white/50 text-sm leading-relaxed font-light max-w-xl">{obj.desc}</p>
                     </div>
                   </div>
@@ -221,7 +221,7 @@ export default function Objectives() {
                         <span className="font-(family-name:--font-syne) text-gold text-[9px] tracking-[0.35em] uppercase font-semibold block mb-2">
                           {item.num}
                         </span>
-                        <h3 className="font-(family-name:--font-playfair) font-normal text-white text-xl md:text-2xl leading-snug mb-2">
+                        <h3 className="font-(family-name:--font-inter) font-bold text-white text-xl md:text-2xl leading-snug mb-2">
                           {item.title}
                         </h3>
                         <p className="text-white/0 text-sm leading-relaxed font-light group-hover:text-white/55 transition-all duration-400 max-h-0 group-hover:max-h-20 overflow-hidden">

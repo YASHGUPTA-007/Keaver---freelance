@@ -62,7 +62,7 @@ export default function Impact() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-(family-name:--font-playfair) font-normal text-navy text-3xl md:text-4xl lg:text-5xl"
+            className="font-(family-name:--font-inter) font-bold text-navy text-3xl md:text-4xl lg:text-5xl tracking-tight"
           >
             Numbers that <em className="text-gold italic">matter</em>
           </motion.h2>
@@ -79,10 +79,10 @@ export default function Impact() {
               className="text-center group"
             >
               <div className="flex items-baseline justify-center gap-0.5 mb-2">
-                <span className={`counter-val-${i} font-(family-name:--font-playfair) font-semibold text-5xl md:text-6xl lg:text-7xl text-navy tabular-nums`}>
+                <span className={`counter-val-${i} font-(family-name:--font-inter) font-semibold text-5xl md:text-6xl lg:text-7xl text-navy tabular-nums tracking-tight`}>
                   {stat.value}
                 </span>
-                <span className="font-(family-name:--font-playfair) font-normal text-3xl md:text-4xl text-gold">
+                <span className="font-(family-name:--font-inter) font-bold text-3xl md:text-4xl text-gold">
                   {stat.suffix}
                 </span>
               </div>

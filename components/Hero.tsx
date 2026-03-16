@@ -120,7 +120,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.7, duration: 1, ease: [0.16, 1, 0.3, 1] }}
-              className="font-(family-name:--font-playfair) font-normal text-white leading-[1.08] max-w-3xl"
+              className="font-(family-name:--font-inter) font-bold text-white leading-[1.08] max-w-3xl tracking-tight"
             >
               <span className="block text-[11vw] sm:text-[4.5rem] lg:text-[5.5rem] xl:text-[6.2rem]">Education</span>
               <span className="block text-[11vw] sm:text-[4.5rem] lg:text-[5.5rem] xl:text-[6.2rem]">

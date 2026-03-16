@@ -31,7 +31,7 @@ export default function GetInvolved() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-(family-name:--font-playfair) font-normal text-navy text-3xl md:text-4xl lg:text-5xl mb-4"
+            className="font-(family-name:--font-inter) font-bold text-navy text-3xl md:text-4xl lg:text-5xl mb-4 tracking-tight"
           >
             Get Involved
           </motion.h2>
@@ -68,7 +68,7 @@ export default function GetInvolved() {
               </span>
 
               <div className="mt-auto">
-                <h3 className={`font-(family-name:--font-playfair) font-normal text-2xl mb-3 leading-snug transition-colors duration-300 ${
+                <h3 className={`font-(family-name:--font-inter) font-bold text-2xl mb-3 leading-snug transition-colors duration-300 ${
                   hovered === i ? "text-white" : "text-navy"
                 }`}>
                   {tier.title}

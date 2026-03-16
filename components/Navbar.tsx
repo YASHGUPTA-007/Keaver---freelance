@@ -99,7 +99,7 @@ export default function Navbar() {
                   <Link
                     href={link.href}
                     onClick={() => setMenuOpen(false)}
-                    className="block text-4xl font-[family-name:var(--font-playfair)] font-normal text-white hover:text-[#C9A84C] transition-colors py-2"
+                    className="block text-4xl font-(family-name:--font-inter) font-bold text-white hover:text-[#C9A84C] transition-colors py-2 tracking-tight"
                   >
                     {link.label}
                   </Link>
