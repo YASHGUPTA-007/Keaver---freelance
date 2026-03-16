@@ -18,7 +18,7 @@ export default function Home() {
       <Marquee />
       <WhoWeAre />
       <Objectives />
-      {/* <Programs /> */}
+      <Programs />
       <HowWeWork />
       <Impact />
       <Values />

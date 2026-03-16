@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -43,8 +43,10 @@ const BG = "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1800&
 export default function HowWeWork() {
   const wrapperRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+  const [windowWidth, setWindowWidth] = useState(1200);
 
   useEffect(() => {
+    setWindowWidth(window.innerWidth);
     gsap.registerPlugin(ScrollTrigger);
 
     const timeout = setTimeout(() => {
@@ -76,7 +78,7 @@ export default function HowWeWork() {
     };
   }, []);
 
-  const totalW = steps.length * (CARD_WIDTH + GAP) + window.innerWidth;
+  const totalW = steps.length * (CARD_WIDTH + GAP) + windowWidth;
 
   return (
     <div
