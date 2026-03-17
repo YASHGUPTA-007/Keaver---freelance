@@ -103,7 +103,7 @@ export default function HowWeWork() {
           <span className="w-6 h-px bg-gold" />
           <span className="font-(family-name:--font-syne) text-[10px] tracking-[0.3em] uppercase text-gold font-semibold">How It Works</span>
         </div>
-        <h2 className="font-(family-name:--font-inter) font-bold text-white text-3xl md:text-4xl lg:text-5xl tracking-tight">
+        <h2 className="font-(family-name:--font-playfair) font-normal text-white text-3xl md:text-4xl lg:text-5xl">
           The Journey
         </h2>
       </div>
@@ -148,7 +148,7 @@ export default function HowWeWork() {
                 <span className="font-(family-name:--font-syne) text-gold font-semibold text-xs tracking-widest block mb-4">
                   {step.num}
                 </span>
-                <h3 className="font-(family-name:--font-inter) font-bold text-white text-2xl md:text-3xl mb-4 leading-snug">
+                <h3 className="font-(family-name:--font-playfair) font-normal text-white text-2xl md:text-3xl mb-4 leading-snug">
                   {step.title}
                 </h3>
                 <p className="text-white/50 text-sm leading-[1.85] font-light">

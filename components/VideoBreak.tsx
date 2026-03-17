@@ -53,10 +53,10 @@ export default function VideoBreak() {
           <div className="w-10 h-px bg-gold/60" />
         </div>
 
-        <h2 className="vb-text font-(family-name:--font-inter) font-bold text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.1] mb-3 tracking-tight">
+        <h2 className="vb-text font-(family-name:--font-playfair) font-normal text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.1] mb-3">
           Transforming
         </h2>
-        <h2 className="vb-text font-(family-name:--font-inter) italic font-bold text-gold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.1] mb-8 tracking-tight">
+        <h2 className="vb-text font-(family-name:--font-playfair) italic font-normal text-gold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.1] mb-8">
           Lives
         </h2>
         <p className="vb-text text-white/55 text-base md:text-lg font-light leading-relaxed max-w-md mx-auto font-(family-name:--font-inter)">

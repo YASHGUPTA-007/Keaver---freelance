@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 const tiers = [
-  { title: "Become a Mentor",  desc: "Share your expertise and wisdom with a high-potential scholar. Help shape the next generation of global leaders.", cta: "Join as Mentor",    badge: "People Impact"      },
-  { title: "Sponsor a Student", desc: "Provide the financial foundation for a deserving student to access a world-class education and realise their potential.", cta: "Fund Education",   badge: "Financial Impact"   },
-  { title: "Partner With Us",  desc: "Collaborate with Keaver Foundation as an institution or corporation — together we can scale our global impact.", cta: "Start Partnership", badge: "Institutional Impact" },
-  { title: "Volunteer",        desc: "Give your time and skills to our mission. From event support to community outreach — every contribution matters.", cta: "Get Involved",     badge: "Community Impact"   },
+  { title: "Volunteer",         desc: "Give your time and skills to our mission. From event support and community outreach to mentorship — every hour shapes a future leader.", cta: "Join as Volunteer",  badge: "Community Impact"   },
+  { title: "Donate",            desc: "Your donation directly funds scholarships, leadership programmes, and mentorship for high-potential students who lack access to opportunity.", cta: "Make a Donation",    badge: "Financial Impact"   },
+  { title: "Become a Mentor",   desc: "Share your expertise and wisdom with a high-potential scholar. Connect them with the networks and knowledge to unlock their full potential.", cta: "Join as Mentor",     badge: "People Impact"      },
+  { title: "Partner With Us",   desc: "Collaborate with Keaver Foundation as an institution or corporation — together we can scale access to world-class education globally.", cta: "Start Partnership",  badge: "Institutional Impact" },
 ];
 
 export default function GetInvolved() {
@@ -31,7 +31,7 @@ export default function GetInvolved() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-(family-name:--font-inter) font-bold text-navy text-3xl md:text-4xl lg:text-5xl mb-4 tracking-tight"
+            className="font-(family-name:--font-playfair) font-normal text-navy text-3xl md:text-4xl lg:text-5xl mb-4"
           >
             Get Involved
           </motion.h2>
@@ -68,7 +68,7 @@ export default function GetInvolved() {
               </span>
 
               <div className="mt-auto">
-                <h3 className={`font-(family-name:--font-inter) font-bold text-2xl mb-3 leading-snug transition-colors duration-300 ${
+                <h3 className={`font-(family-name:--font-playfair) font-normal text-2xl mb-3 leading-snug transition-colors duration-300 ${
                   hovered === i ? "text-white" : "text-navy"
                 }`}>
                   {tier.title}

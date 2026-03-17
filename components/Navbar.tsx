@@ -52,8 +52,9 @@ export default function Navbar() {
               href="#apply"
               className="ml-2 px-5 py-2 text-xs tracking-[0.15em] uppercase font-[family-name:var(--font-syne)] font-semibold bg-[#0B1F3A] text-white hover:bg-[#C9A84C] hover:text-[#0B1F3A] transition-all duration-300"
             >
-              Apply Now
+              Apply for Sponsorship
             </Link>
+
           </div>
 
           {/* Hamburger */}
@@ -99,7 +100,7 @@ export default function Navbar() {
                   <Link
                     href={link.href}
                     onClick={() => setMenuOpen(false)}
-                    className="block text-4xl font-(family-name:--font-inter) font-bold text-white hover:text-[#C9A84C] transition-colors py-2 tracking-tight"
+                    className="block text-4xl font-[family-name:var(--font-playfair)] font-normal text-white hover:text-[#C9A84C] transition-colors py-2"
                   >
                     {link.label}
                   </Link>

@@ -37,7 +37,7 @@ export default function Apply() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="font-(family-name:--font-inter) font-bold text-white text-3xl md:text-4xl lg:text-5xl leading-tight mb-7 tracking-tight"
+              className="font-(family-name:--font-playfair) font-normal text-white text-3xl md:text-4xl lg:text-5xl leading-tight mb-7"
             >
               Apply for <em className="text-gold italic">Sponsorship</em>
             </motion.h2>
@@ -87,7 +87,7 @@ export default function Apply() {
                     <path d="M5 13l4 4L19 7" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
-                <h3 className="font-(family-name:--font-inter) font-bold text-white text-2xl mb-3">Application Received</h3>
+                <h3 className="font-(family-name:--font-playfair) font-normal text-white text-2xl mb-3">Application Received</h3>
                 <p className="text-white/45 text-sm leading-relaxed font-light">
                   Thank you for reaching out. Our team will review your application and contact you within 5 business days.
                 </p>

@@ -85,7 +85,7 @@ export default function Programs() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="font-(family-name:--font-inter) font-bold text-navy text-3xl md:text-4xl lg:text-5xl leading-tight tracking-tight"
+            className="font-(family-name:--font-playfair) font-normal text-navy text-3xl md:text-4xl lg:text-5xl leading-tight"
           >
             From potential{" "}
             <em className="text-gold italic">to</em>{" "}
@@ -96,6 +96,32 @@ export default function Programs() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {programs.map((p, i) => <Card key={i} program={p} i={i} />)}
         </div>
+
+        {/* Volunteer Opportunities */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+          className="mt-12 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 border border-navy/12 bg-white px-8 py-7"
+        >
+          <div className="flex items-start gap-5">
+            <div className="w-10 h-px bg-gold mt-3 shrink-0" />
+            <div>
+              <p className="font-(family-name:--font-syne) text-[10px] tracking-[0.3em] uppercase text-gold font-semibold mb-1.5">Volunteer Opportunities</p>
+              <p className="text-navy/65 text-sm leading-[1.8] font-light max-w-xl">
+                We're looking for passionate individuals to join our mission. From event support and community outreach to mentorship — every contribution shapes a future leader.
+              </p>
+            </div>
+          </div>
+          <a
+            href="#involved"
+            className="shrink-0 font-(family-name:--font-syne) text-[10px] tracking-[0.2em] uppercase font-semibold text-navy border border-navy/20 px-6 py-3 hover:bg-navy hover:text-white transition-all duration-300"
+          >
+            Get Involved →
+          </a>
+        </motion.div>
+
       </div>
     </section>
   );

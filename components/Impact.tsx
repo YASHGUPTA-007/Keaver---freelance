@@ -62,7 +62,7 @@ export default function Impact() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-(family-name:--font-inter) font-bold text-navy text-3xl md:text-4xl lg:text-5xl tracking-tight"
+            className="font-(family-name:--font-playfair) font-normal text-navy text-3xl md:text-4xl lg:text-5xl"
           >
             Numbers that <em className="text-gold italic">matter</em>
           </motion.h2>

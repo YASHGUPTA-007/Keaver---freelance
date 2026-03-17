@@ -25,7 +25,7 @@ export default function Values() {
               <span className="w-6 h-px bg-gold" />
               <span className="font-(family-name:--font-syne) text-[10px] tracking-[0.3em] uppercase text-gold font-semibold">What We Believe</span>
             </div>
-            <h2 className="font-(family-name:--font-inter) font-bold text-navy text-3xl md:text-4xl lg:text-5xl tracking-tight">
+            <h2 className="font-(family-name:--font-playfair) font-normal text-navy text-3xl md:text-4xl lg:text-5xl">
               Core Values
             </h2>
           </motion.div>
@@ -53,7 +53,7 @@ export default function Values() {
                 <span className="font-(family-name:--font-syne) text-navy/20 text-xs w-6 shrink-0">
                   {String(i + 1).padStart(2, "0")}
                 </span>
-                <span className={`font-(family-name:--font-inter) font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight tracking-tight transition-colors duration-300 ${
+                <span className={`font-(family-name:--font-playfair) font-normal text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight transition-colors duration-300 ${
                   v.accent ? "text-gold group-hover:text-gold" : "text-navy group-hover:text-navy/80"
                 }`}>
                   {v.name}
